@@ -14,8 +14,8 @@ class SuperRockPaperScissors {
    * using Math.random() method, you should be able to get one of the following values
    */
   generateCPUResponse(){
-    const acceptedValues = [ `rock`, `paper`, `scissors` ];
-    let value = Math.floor(Math.random() * 3);
+    const acceptedValues = [ `rock`, `paper`, `scissors`, 'gun', 'water', 'air', 'sponge', 'human', 'fire' ];
+    let value = Math.floor(Math.random() * 9);
     return acceptedValues[value];
   }
   /**
@@ -30,17 +30,23 @@ class SuperRockPaperScissors {
    *    (user is `scissors` and cpu is `paper`)
    * `lose`:
    *    the opposite case :)
-   * @param {string} userSelection user selection. Can only be one of the following values [`rock`, `paper`, `scissors`]
-   * @param {string} cpuSelection computer selection. Can only be one of the following values [`rock`, `paper`, `scissors`]
+   * @param {string} userSelection user selection. 
+   * @param {string} cpuSelection computer selection. 
    */
   determineWinner(userSelection, cpuSelection){
     if(userSelection.toLowerCase() == cpuSelection){
       return "tie";
     }
     else if(
-      (userSelection.toLowerCase() == "rock" && cpuSelection == "scissors")||
-      (userSelection.toLowerCase() == "paper" && cpuSelection == "rock")||
-      (userSelection.toLowerCase() == "scissors" && cpuSelection == "paper")
+      (userSelection.toLowerCase() == "rock" && (cpuSelection == "sponge" || cpuSelection == "human" || cpuSelection == "scissors" || cpuSelection == "fire")) ||
+      (userSelection.toLowerCase() == "gun" && (cpuSelection == "fire" || cpuSelection == "human" || cpuSelection == "scissors" || cpuSelection == "rock")) ||
+      (userSelection.toLowerCase() == "water" && (cpuSelection == "rock" || cpuSelection == "gun" || cpuSelection == "scissors" || cpuSelection == "fire")) ||
+      (userSelection.toLowerCase() == "air" && (cpuSelection == "rock" || cpuSelection == "gun" || cpuSelection == "water" || cpuSelection == "fire")) ||
+      (userSelection.toLowerCase() == "paper" && (cpuSelection == "rock" || cpuSelection == "gun" || cpuSelection == "water" || cpuSelection == "air")) ||
+      (userSelection.toLowerCase() == "sponge" && (cpuSelection == "gun" || cpuSelection == "water" || cpuSelection == "air" || cpuSelection == "paper")) ||
+      (userSelection.toLowerCase() == "human" && (cpuSelection == "water" || cpuSelection == "air" || cpuSelection == "paper" || cpuSelection == "sponge")) ||
+      (userSelection.toLowerCase() == "scissors" && (cpuSelection == "air" || cpuSelection == "paper" || cpuSelection == "sponge" || cpuSelection == "human")) ||
+      (userSelection.toLowerCase() == "fire" && cpuSelection == (cpuSelection == "paper" || cpuSelection == "sponge" || cpuSelection == "human" || cpuSelection == "scissprs"))
     ){
       return "win";
     }
