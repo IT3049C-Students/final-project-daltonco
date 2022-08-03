@@ -1,0 +1,111 @@
+body {
+  background-color: #EEEEEE;
+}
+h1 {
+  color: #006688;
+  font-size: 3em;
+  font-family: "Times New Roman", serif;
+  text-align: center;
+  font-weight: bold;
+}
+label{
+  color: #006688;
+  font-size: 1.25em;
+  font-family: "Times New Roman", serif;
+  font-weight: bold;
+}
+.start-button{
+  color: black;
+  background-color: #FF6677;
+  font-size: 1.25em;
+  font-family: "Times New Roman", serif;
+  font-weight: bold;
+  border-color: #FF6677;
+  border-style: outset;
+  border-width: thick;
+  border-radius: 30px;
+}
+.form-control{
+  background-color: white;
+  font-family: "Times New Roman", serif;
+  font-size: 1.15em;
+}
+::-webkit-input-placeholder{
+  color: black;
+  font-family: "Times New Roman", serif;
+  font-size: 1.15em;
+}
+::-moz-placeholder{
+  color: black;
+  font-family: "Times New Roman", serif;
+  font-size: 1.15em;
+}
+:-ms-input-placeholder{
+  color: black;
+  font-family: "Times New Roman", serif;
+  font-size: 1.15em;
+}
+::-ms-input-placeholder{
+  color: black;
+  font-family: "Times New Roman", serif;
+  font-size: 1.15em;
+}
+.form-control::placeholder{
+  color: black;
+  font-family: "Times New Roman", serif;
+  font-size: 1.15em;
+}
+.RPSUltimate{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 220px;
+}
+.RPSUltimate2{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 100px;
+  width: 15em;
+  margin-bottom: 2em;
+}
+.go-button-css{
+  color: black;
+  background-color: #FF6677;
+  font-size: 1.25em;
+  font-family: "Times New Roman", serif;
+  font-weight: bold;
+  border-color: #FF6677;
+  border-style: outset;
+  border-width: thick;
+  border-radius: 30px;
+  margin-left: 1em;
+  margin-top: .5em;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+.score-board{
+  color: #006688;
+  font-size: 2em;
+  font-family: "Times New Roman", serif;
+  font-weight: bold;
+  text-align: center;
+}
+.user-choice-text{
+  color: #006688;
+  font-size: 1.25em;
+  font-family: "Times New Roman", serif;
+  font-weight: bold;
+}
+.custom-select{
+  color: #006688;
+  font-size: 1.25em;
+  font-family: "Times New Roman", serif;
+  font-weight: bold;
+}
+.game-history-css{
+  color: #006688;
+  font-size: 1.10em;
+  font-family: "Times New Roman", serif;
+  font-weight: bold;
+}

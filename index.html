@@ -18,21 +18,24 @@
         <div id="welcome-screen">
             <form id="name-form">
                 <div class="form-group">
-                    <label for="username">Your Name</label>
+                    <label for="username" id="nameText">Your Name</label>
                     <input id="username" name="username" placeholder="Enter Name Here..." class="form-control" type="text">
                 </div>
-                <button id="start-game-button" class="btn btn-primary" type="button">Start Game!</button>
+                <button id="start-game-button" class="start-button" type="button">Start Game!</button>
+                <div>
+                    <img class="RPSUltimate" src="assets/images/nine-gesture.PNG">
+                </div>
             </form>
         </div>
 
         <!-- Game Screen Div -->
         <div id="game-screen" class="d-none">
             <div id="score-tally">
-                <p id="score">User: 0 v CPU: 0</p>
+                <p id="score" class="score-board">User: 0 v CPU: 0</p>
             </div>
             <form id="game-form">
                 <div class="form-group">
-                    <label for="user-selection">Select Your Choice</label>
+                    <label for="user-selection" class="user-choice-text">Select Your Choice</label>
                     <select id="user-selection" name="user-selection" class="custom-select">
                         <option>Rock</option>
                         <option>Gun</option>
@@ -44,10 +47,16 @@
                         <option>Scissors</option>
                         <option>Fire</option>
                     </select>
+                    <div class="inputDiv">
+                        <button id="go-button" class="go-button-css" type="button">Go!</button>   
+                    </div>  
                 </div>
-                <button id="go-button" class="btn btn-success" type="button">Go!</button>
+                <div>
+                    <img class="RPSUltimate2" src="assets/images/nine-gesture.PNG">
+                </div>
+                <!-- <button id="go-button" class="btn btn-success" type="button">Go!</button> -->
             </form>
-            <p id="game-history"></p>
+            <p id="game-history" class="game-history-css"></p>
         </div>
     </div>
 
